@@ -12,11 +12,11 @@ Install this plugin as `path/to/Elgg/mod/ufcoe_dbsync` and enable it.
 
 In your `settings.php` file, you can now set these values:
 
-	<?php
+```php
+$CONFIG->dbsync_dataroot = '/path/to/your/data/';
 
-	$CONFIG->dbsync_dataroot = '/path/to/your/data/';
-
-	$CONFIG->dbsync_wwwroot = 'http://example.org/path/to/elgg/';
+$CONFIG->dbsync_wwwroot = 'http://example.org/path/to/elgg/';
+```
 
 On every request the plugin will make sure these match the DB.
 
